@@ -1,0 +1,13 @@
+XFCE_VERSION=4.4.1
+inherit xfce4
+
+DESCRIPTION="Xfce4 File Manager"
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}1-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]="etc/ usr/bin/Thunar.exe usr/bin/thunar usr/lib/xfce4/Thunar*
+                 usr/lib/xfce4/panel-plugins/thunar-tpa.exe
+                 usr/lib/xfce4/thunar-sendto-email.exe
+                 usr/share/"
+PKG_CONTENTS[1]="usr/bin/*.dll usr/lib/thunarx-1/ usr/lib/xfce4/*-1.exe"
+PKG_CONTENTS[2]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'

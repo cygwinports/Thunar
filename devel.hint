@@ -1,0 +1,6 @@
+category: Xfce
+requires: cygwin glib2-devel gtk2-x11-devel libX11-devel libexo03-devel gettext libjpeg-devel libpng-devel libxfce4util-devel startup-notification
+external-source: thunar
+sdesc: "Xfce4 file manager libraries (development)"
+ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
+aiming to be easy-to-use and fast."

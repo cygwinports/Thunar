@@ -1,0 +1,374 @@
+thunar
+------------------------------------------
+Thunar is a modern file manager for the Xfce4 desktop, 
+aiming to be easy-to-use and fast.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  GConf2-2.16.1-1
+  atk-1.18.0-1
+  gamin-0.1.7-1
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
+  libICE6-1.0.2-1
+  libSM6-1.0.2-1
+  libX11_6-1.1.1-1
+  libcairo2-1.4.6-1
+  libdbus-glib_1_2-0.73-1
+  libdbus1_3-1.0.2-1
+  libexif12-0.6.13-1
+  libexo03-0.3.2-2
+  libfreetype26-2.3.4-2
+  libintl8-0.15-1
+  libjpeg62-6b-12
+  libpcre0-7.1-1
+  libpng12-1.2.12-1
+  libxfce4util-4.4.1-1
+  pango-1.16.4-1
+  startup-notification-0.8-1
+  xfce4-panel-4.4.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.5-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+  xfce4-dev-tools-4.4.0-1
+
+Canonical website:
+  http://www.xfce.org/
+
+Canonical download:
+  http://www.xfce.org/archive/
+
+-------------------------------------------
+
+Build instructions:
+  unpack thunar-0.8.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./thunar-0.8.0-X.cygport all
+
+This will create:
+  /usr/src/libthunar1-0.8.0-X.tar.bz2
+  /usr/src/libthunar1-devel-0.8.0-X.tar.bz2
+  /usr/src/thunar-0.8.0-X-src.tar.bz2
+  /usr/src/thunar-0.8.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/thunar.sh
+  /etc/xdg/Thunar/uca.xml
+  /usr/bin/Thunar.exe
+  /usr/bin/thunar
+  /usr/lib/xfce4/ThunarBulkRename
+  /usr/lib/xfce4/ThunarHelp
+  /usr/lib/xfce4/panel-plugins/thunar-tpa.exe
+  /usr/lib/xfce4/thunar-sendto-email.exe
+  /usr/share/Thunar/sendto/thunar-sendto-email.desktop
+  /usr/share/applications/Thunar-bulk-rename.desktop
+  /usr/share/applications/Thunar-folder-handler.desktop
+  /usr/share/applications/Thunar.desktop
+  /usr/share/dbus-1/services/org.xfce.FileManager.service
+  /usr/share/dbus-1/services/org.xfce.Thunar.service
+  /usr/share/doc/Cygwin/thunar-0.8.0.README
+  /usr/share/doc/Thunar/README.gtkrc
+  /usr/share/doc/Thunar/README.thunarrc
+  /usr/share/doc/Thunar/README.volumes
+  /usr/share/doc/Thunar/ThumbnailersCacheFormat.txt
+  /usr/share/doc/Thunar/html/C/advanced-topics.html
+  /usr/share/doc/Thunar/html/C/copyright.html
+  /usr/share/doc/Thunar/html/C/customizing-thunar.html
+  /usr/share/doc/Thunar/html/C/faq.html
+  /usr/share/doc/Thunar/html/C/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/C/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/C/images/file-properties.png
+  /usr/share/doc/Thunar/html/C/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/C/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/C/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/C/images/preferences-views.png
+  /usr/share/doc/Thunar/html/C/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/C/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/C/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/C/images/visible-columns.png
+  /usr/share/doc/Thunar/html/C/index.html
+  /usr/share/doc/Thunar/html/C/preferences.html
+  /usr/share/doc/Thunar/html/C/support.html
+  /usr/share/doc/Thunar/html/C/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/C/using-removable-media.html
+  /usr/share/doc/Thunar/html/C/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/es/advanced-topics.html
+  /usr/share/doc/Thunar/html/es/copyright.html
+  /usr/share/doc/Thunar/html/es/customizing-thunar.html
+  /usr/share/doc/Thunar/html/es/faq.html
+  /usr/share/doc/Thunar/html/es/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/es/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/es/images/file-properties.png
+  /usr/share/doc/Thunar/html/es/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/es/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/es/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/es/images/preferences-views.png
+  /usr/share/doc/Thunar/html/es/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/es/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/es/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/es/images/visible-columns.png
+  /usr/share/doc/Thunar/html/es/index.html
+  /usr/share/doc/Thunar/html/es/preferences.html
+  /usr/share/doc/Thunar/html/es/support.html
+  /usr/share/doc/Thunar/html/es/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/es/using-removable-media.html
+  /usr/share/doc/Thunar/html/es/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/eu/advanced-topics.html
+  /usr/share/doc/Thunar/html/eu/copyright.html
+  /usr/share/doc/Thunar/html/eu/customizing-thunar.html
+  /usr/share/doc/Thunar/html/eu/faq.html
+  /usr/share/doc/Thunar/html/eu/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/eu/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/eu/images/file-properties.png
+  /usr/share/doc/Thunar/html/eu/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/eu/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/eu/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/eu/images/preferences-views.png
+  /usr/share/doc/Thunar/html/eu/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/eu/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/eu/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/eu/images/visible-columns.png
+  /usr/share/doc/Thunar/html/eu/index.html
+  /usr/share/doc/Thunar/html/eu/preferences.html
+  /usr/share/doc/Thunar/html/eu/support.html
+  /usr/share/doc/Thunar/html/eu/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/eu/using-removable-media.html
+  /usr/share/doc/Thunar/html/eu/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/fr/advanced-topics.html
+  /usr/share/doc/Thunar/html/fr/copyright.html
+  /usr/share/doc/Thunar/html/fr/customizing-thunar.html
+  /usr/share/doc/Thunar/html/fr/faq.html
+  /usr/share/doc/Thunar/html/fr/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/fr/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/fr/images/file-properties.png
+  /usr/share/doc/Thunar/html/fr/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/fr/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/fr/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/fr/images/preferences-views.png
+  /usr/share/doc/Thunar/html/fr/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/fr/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/fr/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/fr/images/visible-columns.png
+  /usr/share/doc/Thunar/html/fr/index.html
+  /usr/share/doc/Thunar/html/fr/preferences.html
+  /usr/share/doc/Thunar/html/fr/support.html
+  /usr/share/doc/Thunar/html/fr/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/fr/using-removable-media.html
+  /usr/share/doc/Thunar/html/fr/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/ja/advanced-topics.html
+  /usr/share/doc/Thunar/html/ja/copyright.html
+  /usr/share/doc/Thunar/html/ja/customizing-thunar.html
+  /usr/share/doc/Thunar/html/ja/faq.html
+  /usr/share/doc/Thunar/html/ja/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/ja/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/ja/images/file-properties.png
+  /usr/share/doc/Thunar/html/ja/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/ja/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/ja/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/ja/images/preferences-views.png
+  /usr/share/doc/Thunar/html/ja/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/ja/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/ja/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/ja/images/visible-columns.png
+  /usr/share/doc/Thunar/html/ja/index.html
+  /usr/share/doc/Thunar/html/ja/preferences.html
+  /usr/share/doc/Thunar/html/ja/support.html
+  /usr/share/doc/Thunar/html/ja/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/ja/using-removable-media.html
+  /usr/share/doc/Thunar/html/ja/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/pl/advanced-topics.html
+  /usr/share/doc/Thunar/html/pl/copyright.html
+  /usr/share/doc/Thunar/html/pl/customizing-thunar.html
+  /usr/share/doc/Thunar/html/pl/faq.html
+  /usr/share/doc/Thunar/html/pl/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/pl/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/pl/images/file-properties.png
+  /usr/share/doc/Thunar/html/pl/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/pl/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/pl/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/pl/images/preferences-views.png
+  /usr/share/doc/Thunar/html/pl/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/pl/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/pl/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/pl/images/visible-columns.png
+  /usr/share/doc/Thunar/html/pl/index.html
+  /usr/share/doc/Thunar/html/pl/preferences.html
+  /usr/share/doc/Thunar/html/pl/support.html
+  /usr/share/doc/Thunar/html/pl/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/pl/using-removable-media.html
+  /usr/share/doc/Thunar/html/pl/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/ru/advanced-topics.html
+  /usr/share/doc/Thunar/html/ru/copyright.html
+  /usr/share/doc/Thunar/html/ru/customizing-thunar.html
+  /usr/share/doc/Thunar/html/ru/faq.html
+  /usr/share/doc/Thunar/html/ru/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/ru/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/ru/images/file-properties.png
+  /usr/share/doc/Thunar/html/ru/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/ru/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/ru/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/ru/images/preferences-views.png
+  /usr/share/doc/Thunar/html/ru/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/ru/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/ru/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/ru/images/visible-columns.png
+  /usr/share/doc/Thunar/html/ru/index.html
+  /usr/share/doc/Thunar/html/ru/preferences.html
+  /usr/share/doc/Thunar/html/ru/support.html
+  /usr/share/doc/Thunar/html/ru/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/ru/using-removable-media.html
+  /usr/share/doc/Thunar/html/ru/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/thunar.css
+  /usr/share/doc/Thunar/html/zh_TW/advanced-topics.html
+  /usr/share/doc/Thunar/html/zh_TW/copyright.html
+  /usr/share/doc/Thunar/html/zh_TW/customizing-thunar.html
+  /usr/share/doc/Thunar/html/zh_TW/faq.html
+  /usr/share/doc/Thunar/html/zh_TW/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/zh_TW/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/zh_TW/images/file-properties.png
+  /usr/share/doc/Thunar/html/zh_TW/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/zh_TW/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/zh_TW/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/zh_TW/images/preferences-views.png
+  /usr/share/doc/Thunar/html/zh_TW/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/zh_TW/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/zh_TW/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/zh_TW/images/visible-columns.png
+  /usr/share/doc/Thunar/html/zh_TW/index.html
+  /usr/share/doc/Thunar/html/zh_TW/preferences.html
+  /usr/share/doc/Thunar/html/zh_TW/support.html
+  /usr/share/doc/Thunar/html/zh_TW/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/zh_TW/using-removable-media.html
+  /usr/share/doc/Thunar/html/zh_TW/working-with-files-and-folders.html
+  /usr/share/doc/thunar-0.8.0/AUTHORS
+  /usr/share/doc/thunar-0.8.0/COPYING
+  /usr/share/doc/thunar-0.8.0/COPYING.LIB
+  /usr/share/doc/thunar-0.8.0/ChangeLog
+  /usr/share/doc/thunar-0.8.0/FAQ
+  /usr/share/doc/thunar-0.8.0/HACKING
+  /usr/share/doc/thunar-0.8.0/INSTALL
+  /usr/share/doc/thunar-0.8.0/NEWS
+  /usr/share/doc/thunar-0.8.0/README
+  /usr/share/doc/thunar-0.8.0/THANKS
+  /usr/share/doc/thunar-0.8.0/TODO
+  /usr/share/icons/hicolor/16x16/apps/Thunar.png
+  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-shortcuts.png
+  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-templates.png
+  /usr/share/icons/hicolor/24x24/apps/Thunar.png
+  /usr/share/icons/hicolor/48x48/apps/Thunar.png
+  /usr/share/icons/hicolor/scalable/apps/Thunar.svg
+  /usr/share/locale/be/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ca/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/cs/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/de/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/dz/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/el/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/eo/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/es/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/et/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/eu/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/fi/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/fr/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/gl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/he/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/hu/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/it/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ja/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ka/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ko/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/lt/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/mk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ro/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ru/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sv/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/uk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/Thunar.mo
+  /usr/share/man/man1/Thunar.1.gz
+  /usr/share/pixmaps/Thunar/Thunar-about-logo.png
+  /usr/share/pixmaps/Thunar/Thunar-fallback-icon.png
+  /usr/share/thumbnailers/thunar-vfs-font-thumbnailer-1.desktop
+  /usr/share/xfce4/panel-plugins/thunar-tpa.desktop
+
+(libthunar1)
+  /usr/bin/cygthunar-vfs-1-2.dll
+  /usr/bin/cygthunarx-1-2.dll
+  /usr/lib/thunarx-1/thunar-apr.dll
+  /usr/lib/thunarx-1/thunar-apr.la
+  /usr/lib/thunarx-1/thunar-sbr.dll
+  /usr/lib/thunarx-1/thunar-sbr.la
+  /usr/lib/thunarx-1/thunar-uca.dll
+  /usr/lib/thunarx-1/thunar-uca.la
+  /usr/lib/xfce4/thunar-vfs-font-thumbnailer-1.exe
+  /usr/lib/xfce4/thunar-vfs-mime-cleaner-1.exe
+  /usr/lib/xfce4/thunar-vfs-pixbuf-thumbnailer-1.exe
+  /usr/lib/xfce4/thunar-vfs-update-thumbnailers-cache-1.exe
+
+(libthunar1-devel)
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-config.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-enum-types.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-info.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-interactive-job.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-job.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-action.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-application.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-database.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-handler.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-info.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-monitor.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-path.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-thumb.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-types.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-user.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-util.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-volume.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs.h
+  /usr/include/thunarx-1/thunarx/thunarx-config.h
+  /usr/include/thunarx-1/thunarx/thunarx-file-info.h
+  /usr/include/thunarx-1/thunarx/thunarx-menu-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-preferences-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-property-page-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-property-page.h
+  /usr/include/thunarx-1/thunarx/thunarx-provider-factory.h
+  /usr/include/thunarx-1/thunarx/thunarx-provider-plugin.h
+  /usr/include/thunarx-1/thunarx/thunarx-renamer-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-renamer.h
+  /usr/include/thunarx-1/thunarx/thunarx.h
+  /usr/lib/libthunar-vfs-1.dll.a
+  /usr/lib/libthunar-vfs-1.la
+  /usr/lib/libthunarx-1.dll.a
+  /usr/lib/libthunarx-1.la
+  /usr/lib/pkgconfig/thunar-vfs-1.pc
+  /usr/lib/pkgconfig/thunarx-1.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.8.0-1 -----
+Initial release of Xfce 4.4 for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
