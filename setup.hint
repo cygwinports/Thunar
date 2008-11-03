@@ -1,4 +1,4 @@
-category: Xfce
+category: X11
 requires: cygwin atk glib2 gtk2-x11 libICE6 libSM6 libX11_6 libcairo2 libdbus-glib_1_2 libdbus1_3 libexo03 libintl8 libthunar1 libxfce4util pango xfce4-panel
 sdesc: "Xfce4 file manager"
 ldesc: "Thunar is a modern file manager for the Xfce4 desktop,

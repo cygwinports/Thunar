@@ -4,46 +4,45 @@ Thunar is a modern file manager for the Xfce4 desktop,
 aiming to be easy-to-use and fast.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  GConf2-2.16.1-1
-  atk-1.18.0-1
-  gamin-0.1.7-1
-  gdk-pixbuf2-2.10.12-1
-  glib2-2.12.12-1
-  gtk2-x11-2.10.12-1
-  libICE6-1.0.2-1
-  libSM6-1.0.2-1
-  libX11_6-1.1.1-1
-  libcairo2-1.4.6-1
-  libdbus-glib_1_2-0.73-1
-  libdbus1_3-1.0.2-1
-  libexif12-0.6.13-1
+  cygwin-1.5.25-15
+  atk-1.22.0-1
+  gamin-0.1.9-1
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.12-1
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libcairo2-1.6.4-2
+  libdbus-glib_1_2-0.76-1
+  libdbus1_3-1.2.3-1
+  libexif12-0.6.16-2
   libexo03-0.3.2-2
-  libfreetype26-2.3.4-2
-  libintl8-0.15-1
+  libfreetype26-2.3.7-1
+  libICE6-1.0.4-2
+  libintl8-0.17-1
   libjpeg62-6b-12
-  libpcre0-7.1-1
-  libpng12-1.2.12-1
+  libpcre0-7.8-1
+  libpng12-1.2.32-1
+  libSM6-1.1.0-1
+  libX11_6-1.1.5-1
   libxfce4util-4.4.1-1
-  pango-1.16.4-1
-  startup-notification-0.8-1
+  pango-1.20.5-1
+  startup-notification-0.9-1
   xfce4-panel-4.4.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  intltool-0.35.5-1
-  libtool1.5-1.5.23a-2
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.4.0-1
+  xfce4-dev-tools-4.5.91-1
 
 Canonical website:
   http://www.xfce.org/
@@ -54,37 +53,36 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack thunar-0.8.0-X-src.tar.bz2
+  unpack thunar-0.9.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./thunar-0.8.0-X.cygport all
+  cygport ./thunar-0.9.91-X.cygport all
 
 This will create:
-  /usr/src/libthunar1-0.8.0-X.tar.bz2
-  /usr/src/libthunar1-devel-0.8.0-X.tar.bz2
-  /usr/src/thunar-0.8.0-X-src.tar.bz2
-  /usr/src/thunar-0.8.0-X.tar.bz2
+  /usr/src/libthunar1-0.9.91-X.tar.bz2
+  /usr/src/libthunar1-devel-0.9.91-X.tar.bz2
+  /usr/src/thunar-0.9.91-X-src.tar.bz2
+  /usr/src/thunar-0.9.91-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+(thunar)
   /etc/postinstall/thunar.sh
   /etc/xdg/Thunar/uca.xml
   /usr/bin/Thunar.exe
   /usr/bin/thunar
-  /usr/lib/xfce4/ThunarBulkRename
-  /usr/lib/xfce4/ThunarHelp
+  /usr/bin/thunar-settings
   /usr/lib/xfce4/panel-plugins/thunar-tpa.exe
-  /usr/lib/xfce4/thunar-sendto-email.exe
   /usr/share/Thunar/sendto/thunar-sendto-email.desktop
   /usr/share/applications/Thunar-bulk-rename.desktop
   /usr/share/applications/Thunar-folder-handler.desktop
   /usr/share/applications/Thunar.desktop
+  /usr/share/applications/thunar-settings.desktop
   /usr/share/dbus-1/services/org.xfce.FileManager.service
   /usr/share/dbus-1/services/org.xfce.Thunar.service
-  /usr/share/doc/Cygwin/thunar-0.8.0.README
   /usr/share/doc/Thunar/README.gtkrc
   /usr/share/doc/Thunar/README.thunarrc
   /usr/share/doc/Thunar/README.volumes
@@ -194,6 +192,27 @@ Files included in the binary package:
   /usr/share/doc/Thunar/html/ja/the-file-manager-window.html
   /usr/share/doc/Thunar/html/ja/using-removable-media.html
   /usr/share/doc/Thunar/html/ja/working-with-files-and-folders.html
+  /usr/share/doc/Thunar/html/nl/advanced-topics.html
+  /usr/share/doc/Thunar/html/nl/copyright.html
+  /usr/share/doc/Thunar/html/nl/customizing-thunar.html
+  /usr/share/doc/Thunar/html/nl/faq.html
+  /usr/share/doc/Thunar/html/nl/images/bulk-rename.png
+  /usr/share/doc/Thunar/html/nl/images/file-manager-window.png
+  /usr/share/doc/Thunar/html/nl/images/file-properties.png
+  /usr/share/doc/Thunar/html/nl/images/preferences-advanced.png
+  /usr/share/doc/Thunar/html/nl/images/preferences-behavior.png
+  /usr/share/doc/Thunar/html/nl/images/preferences-side-pane.png
+  /usr/share/doc/Thunar/html/nl/images/preferences-views.png
+  /usr/share/doc/Thunar/html/nl/images/removable-drives-and-media.png
+  /usr/share/doc/Thunar/html/nl/images/removable-media-unmount.png
+  /usr/share/doc/Thunar/html/nl/images/sendto-menu.png
+  /usr/share/doc/Thunar/html/nl/images/visible-columns.png
+  /usr/share/doc/Thunar/html/nl/index.html
+  /usr/share/doc/Thunar/html/nl/preferences.html
+  /usr/share/doc/Thunar/html/nl/support.html
+  /usr/share/doc/Thunar/html/nl/the-file-manager-window.html
+  /usr/share/doc/Thunar/html/nl/using-removable-media.html
+  /usr/share/doc/Thunar/html/nl/working-with-files-and-folders.html
   /usr/share/doc/Thunar/html/pl/advanced-topics.html
   /usr/share/doc/Thunar/html/pl/copyright.html
   /usr/share/doc/Thunar/html/pl/customizing-thunar.html
@@ -258,29 +277,99 @@ Files included in the binary package:
   /usr/share/doc/Thunar/html/zh_TW/the-file-manager-window.html
   /usr/share/doc/Thunar/html/zh_TW/using-removable-media.html
   /usr/share/doc/Thunar/html/zh_TW/working-with-files-and-folders.html
-  /usr/share/doc/thunar-0.8.0/AUTHORS
-  /usr/share/doc/thunar-0.8.0/COPYING
-  /usr/share/doc/thunar-0.8.0/COPYING.LIB
-  /usr/share/doc/thunar-0.8.0/ChangeLog
-  /usr/share/doc/thunar-0.8.0/FAQ
-  /usr/share/doc/thunar-0.8.0/HACKING
-  /usr/share/doc/thunar-0.8.0/INSTALL
-  /usr/share/doc/thunar-0.8.0/NEWS
-  /usr/share/doc/thunar-0.8.0/README
-  /usr/share/doc/thunar-0.8.0/THANKS
-  /usr/share/doc/thunar-0.8.0/TODO
+  /usr/share/doc/thunar-0.9.91/AUTHORS
+  /usr/share/doc/thunar-0.9.91/COPYING
+  /usr/share/doc/thunar-0.9.91/COPYING.LIB
+  /usr/share/doc/thunar-0.9.91/ChangeLog
+  /usr/share/doc/thunar-0.9.91/FAQ
+  /usr/share/doc/thunar-0.9.91/HACKING
+  /usr/share/doc/thunar-0.9.91/INSTALL
+  /usr/share/doc/thunar-0.9.91/NEWS
+  /usr/share/doc/thunar-0.9.91/README
+  /usr/share/doc/thunar-0.9.91/THANKS
+  /usr/share/doc/thunar-0.9.91/TODO
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsGroup.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsJob.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMimeAction.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMimeApplication.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMimeDatabase.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMimeHandler.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMonitor.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsUser.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsUserManager.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsVolume.html
+  /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsVolumeManager.html
+  /usr/share/gtk-doc/html/thunar-vfs/filesystem-monitoring.html
+  /usr/share/gtk-doc/html/thunar-vfs/fundamentals.html
+  /usr/share/gtk-doc/html/thunar-vfs/home.png
+  /usr/share/gtk-doc/html/thunar-vfs/index.html
+  /usr/share/gtk-doc/html/thunar-vfs/index.sgml
+  /usr/share/gtk-doc/html/thunar-vfs/introduction.html
+  /usr/share/gtk-doc/html/thunar-vfs/ix01.html
+  /usr/share/gtk-doc/html/thunar-vfs/jobs.html
+  /usr/share/gtk-doc/html/thunar-vfs/left.png
+  /usr/share/gtk-doc/html/thunar-vfs/mime-types.html
+  /usr/share/gtk-doc/html/thunar-vfs/right.png
+  /usr/share/gtk-doc/html/thunar-vfs/style.css
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-Basic-Types.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-Initialization-and-Shutdown.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-Jobs.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-ThunarVfsInfo.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-ThunarVfsMimeInfo.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-ThunarVfsPath.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs-Utility-Functions.html
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs.devhelp
+  /usr/share/gtk-doc/html/thunar-vfs/thunar-vfs.devhelp2
+  /usr/share/gtk-doc/html/thunar-vfs/up.png
+  /usr/share/gtk-doc/html/thunar-vfs/users-and-groups-handling.html
+  /usr/share/gtk-doc/html/thunar-vfs/volume-handling.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxFileInfo.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxMenuProvider.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxPreferencesProvider.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxPropertyPage.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxPropertyPageProvider.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxProviderFactory.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxProviderPlugin.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxRenamer.html
+  /usr/share/gtk-doc/html/thunarx/ThunarxRenamerProvider.html
+  /usr/share/gtk-doc/html/thunarx/abstraction.png
+  /usr/share/gtk-doc/html/thunarx/bulk-rename.png
+  /usr/share/gtk-doc/html/thunarx/home.png
+  /usr/share/gtk-doc/html/thunarx/index.html
+  /usr/share/gtk-doc/html/thunarx/index.sgml
+  /usr/share/gtk-doc/html/thunarx/ix01.html
+  /usr/share/gtk-doc/html/thunarx/left.png
+  /usr/share/gtk-doc/html/thunarx/menu-provider.png
+  /usr/share/gtk-doc/html/thunarx/right.png
+  /usr/share/gtk-doc/html/thunarx/say-hello.png
+  /usr/share/gtk-doc/html/thunarx/style.css
+  /usr/share/gtk-doc/html/thunarx/thunarx-Variables-and-functions-to-check-the-library-version.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-abstraction-layer.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-fundamentals.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-overview.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-providers.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-using-extensions.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-writing-extensions-advanced-topics.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-writing-extensions-getting-started.html
+  /usr/share/gtk-doc/html/thunarx/thunarx-writing-extensions.html
+  /usr/share/gtk-doc/html/thunarx/thunarx.devhelp
+  /usr/share/gtk-doc/html/thunarx/thunarx.devhelp2
+  /usr/share/gtk-doc/html/thunarx/up.png
   /usr/share/icons/hicolor/16x16/apps/Thunar.png
   /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-shortcuts.png
   /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-templates.png
   /usr/share/icons/hicolor/24x24/apps/Thunar.png
   /usr/share/icons/hicolor/48x48/apps/Thunar.png
   /usr/share/icons/hicolor/scalable/apps/Thunar.svg
+  /usr/share/locale/ar/LC_MESSAGES/Thunar.mo
   /usr/share/locale/be/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ca/LC_MESSAGES/Thunar.mo
   /usr/share/locale/cs/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/da/LC_MESSAGES/Thunar.mo
   /usr/share/locale/de/LC_MESSAGES/Thunar.mo
   /usr/share/locale/dz/LC_MESSAGES/Thunar.mo
   /usr/share/locale/el/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/Thunar.mo
   /usr/share/locale/eo/LC_MESSAGES/Thunar.mo
   /usr/share/locale/es/LC_MESSAGES/Thunar.mo
   /usr/share/locale/et/LC_MESSAGES/Thunar.mo
@@ -290,19 +379,30 @@ Files included in the binary package:
   /usr/share/locale/gl/LC_MESSAGES/Thunar.mo
   /usr/share/locale/he/LC_MESSAGES/Thunar.mo
   /usr/share/locale/hu/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/id/LC_MESSAGES/Thunar.mo
   /usr/share/locale/it/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ja/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ka/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ko/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ku/LC_MESSAGES/Thunar.mo
   /usr/share/locale/lt/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/lv/LC_MESSAGES/Thunar.mo
   /usr/share/locale/mk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nb_NO/LC_MESSAGES/Thunar.mo
   /usr/share/locale/nl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nn_NO/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pa/LC_MESSAGES/Thunar.mo
   /usr/share/locale/pl/LC_MESSAGES/Thunar.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ro/LC_MESSAGES/Thunar.mo
   /usr/share/locale/ru/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sq/LC_MESSAGES/Thunar.mo
   /usr/share/locale/sv/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/tr/LC_MESSAGES/Thunar.mo
   /usr/share/locale/uk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ur/LC_MESSAGES/Thunar.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/Thunar.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/Thunar.mo
   /usr/share/man/man1/Thunar.1.gz
@@ -320,6 +420,9 @@ Files included in the binary package:
   /usr/lib/thunarx-1/thunar-sbr.la
   /usr/lib/thunarx-1/thunar-uca.dll
   /usr/lib/thunarx-1/thunar-uca.la
+  /usr/lib/xfce4/ThunarBulkRename
+  /usr/lib/xfce4/ThunarHelp
+  /usr/lib/xfce4/thunar-sendto-email.exe
   /usr/lib/xfce4/thunar-vfs-font-thumbnailer-1.exe
   /usr/lib/xfce4/thunar-vfs-mime-cleaner-1.exe
   /usr/lib/xfce4/thunar-vfs-pixbuf-thumbnailer-1.exe
@@ -365,6 +468,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.9.91-1 -----
+Version bump for Xfce 4.6-beta2.
 
 ----- version 0.8.0-1 -----
 Initial release of Xfce 4.4 for Cygwin.
