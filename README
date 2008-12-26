@@ -5,34 +5,34 @@ aiming to be easy-to-use and fast.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  atk-1.22.0-1
-  gamin-0.1.9-1
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
+  libatk1.0_0-1.24.0-1
   libcairo2-1.6.4-2
-  libdbus-glib_1_2-0.76-1
-  libdbus1_3-1.2.3-1
-  libexif12-0.6.16-2
-  libexo03-0.3.2-2
+  libdbus-glib_1_2-0.78-1
+  libdbus1_3-1.2.4-1
+  libexif12-0.6.17-1
+  libexo0.3_0-0.3.92-1
+  libfam0-0.1.10-1
   libfreetype26-2.3.7-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.6-1
   libICE6-1.0.4-2
   libintl8-0.17-1
   libjpeg62-6b-12
+  libpango1.0_0-1.22.4-1
   libpcre0-7.8-1
-  libpng12-1.2.32-1
+  libpng12-1.2.33-1
   libSM6-1.1.0-1
+  libstartup-notification1_0-0.9-2
   libX11_6-1.1.5-1
-  libxfce4util-4.4.1-1
-  pango-1.20.5-1
-  startup-notification-0.9-1
-  xfce4-panel-4.4.1-1
+  libxfce4util4-4.5.92-1
+  xfce4-panel-4.5.92-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
   cygport-0.4.3-1
   gawk-3.1.6-1
@@ -42,7 +42,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.91-1
+  xfce4-dev-tools-4.5.92-1
 
 Canonical website:
   http://www.xfce.org/
@@ -53,17 +53,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack thunar-0.9.91-X-src.tar.bz2
+  unpack thunar-0.9.92-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./thunar-0.9.91-X.cygport all
+  cygport ./thunar-0.9.92-X.cygport all
 
 This will create:
-  /usr/src/libthunar1-0.9.91-X.tar.bz2
-  /usr/src/libthunar1-devel-0.9.91-X.tar.bz2
-  /usr/src/thunar-0.9.91-X-src.tar.bz2
-  /usr/src/thunar-0.9.91-X.tar.bz2
+  /usr/src/libthunar1-devel-0.9.92-X.tar.bz2
+  /usr/src/libthunar1_2-0.9.92-X.tar.bz2
+  /usr/src/thunar-0.9.92-X-src.tar.bz2
+  /usr/src/thunar-0.9.92-X.tar.bz2
 
 -------------------------------------------
 
@@ -277,17 +277,128 @@ Files included in the binary package:
   /usr/share/doc/Thunar/html/zh_TW/the-file-manager-window.html
   /usr/share/doc/Thunar/html/zh_TW/using-removable-media.html
   /usr/share/doc/Thunar/html/zh_TW/working-with-files-and-folders.html
-  /usr/share/doc/thunar-0.9.91/AUTHORS
-  /usr/share/doc/thunar-0.9.91/COPYING
-  /usr/share/doc/thunar-0.9.91/COPYING.LIB
-  /usr/share/doc/thunar-0.9.91/ChangeLog
-  /usr/share/doc/thunar-0.9.91/FAQ
-  /usr/share/doc/thunar-0.9.91/HACKING
-  /usr/share/doc/thunar-0.9.91/INSTALL
-  /usr/share/doc/thunar-0.9.91/NEWS
-  /usr/share/doc/thunar-0.9.91/README
-  /usr/share/doc/thunar-0.9.91/THANKS
-  /usr/share/doc/thunar-0.9.91/TODO
+  /usr/share/doc/thunar-0.9.92/AUTHORS
+  /usr/share/doc/thunar-0.9.92/COPYING
+  /usr/share/doc/thunar-0.9.92/COPYING.LIB
+  /usr/share/doc/thunar-0.9.92/ChangeLog
+  /usr/share/doc/thunar-0.9.92/FAQ
+  /usr/share/doc/thunar-0.9.92/HACKING
+  /usr/share/doc/thunar-0.9.92/INSTALL
+  /usr/share/doc/thunar-0.9.92/NEWS
+  /usr/share/doc/thunar-0.9.92/README
+  /usr/share/doc/thunar-0.9.92/THANKS
+  /usr/share/doc/thunar-0.9.92/TODO
+  /usr/share/icons/hicolor/16x16/apps/Thunar.png
+  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-shortcuts.png
+  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-templates.png
+  /usr/share/icons/hicolor/24x24/apps/Thunar.png
+  /usr/share/icons/hicolor/48x48/apps/Thunar.png
+  /usr/share/icons/hicolor/scalable/apps/Thunar.svg
+  /usr/share/locale/ar/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/be/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ca/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/cs/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/da/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/de/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/dz/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/el/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/eo/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/es/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/et/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/eu/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/fi/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/fr/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/gl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/he/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/hu/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/id/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/it/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ja/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ka/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ko/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ku/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/lt/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/lv/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/mk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nb_NO/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/nn_NO/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pa/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pl/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ro/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ru/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sq/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/sv/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/tr/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/uk/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/ur/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/Thunar.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/Thunar.mo
+  /usr/share/man/man1/Thunar.1.gz
+  /usr/share/pixmaps/Thunar/Thunar-about-logo.png
+  /usr/share/pixmaps/Thunar/Thunar-fallback-icon.png
+  /usr/share/thumbnailers/thunar-vfs-font-thumbnailer-1.desktop
+  /usr/share/xfce4/panel-plugins/thunar-tpa.desktop
+
+(libthunar1_2)
+  /usr/bin/cygthunar-vfs-1-2.dll
+  /usr/bin/cygthunarx-1-2.dll
+  /usr/lib/thunarx-1/thunar-apr.dll
+  /usr/lib/thunarx-1/thunar-apr.la
+  /usr/lib/thunarx-1/thunar-sbr.dll
+  /usr/lib/thunarx-1/thunar-sbr.la
+  /usr/lib/thunarx-1/thunar-uca.dll
+  /usr/lib/thunarx-1/thunar-uca.la
+  /usr/lib/thunarx-1/thunar-wallpaper-plugin.dll
+  /usr/lib/thunarx-1/thunar-wallpaper-plugin.la
+  /usr/lib/xfce4/ThunarBulkRename
+  /usr/lib/xfce4/ThunarHelp
+  /usr/lib/xfce4/thunar-sendto-email.exe
+  /usr/lib/xfce4/thunar-vfs-font-thumbnailer-1.exe
+  /usr/lib/xfce4/thunar-vfs-mime-cleaner-1.exe
+  /usr/lib/xfce4/thunar-vfs-pixbuf-thumbnailer-1.exe
+  /usr/lib/xfce4/thunar-vfs-update-thumbnailers-cache-1.exe
+
+(libthunar1-devel)
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-config.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-enum-types.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-info.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-interactive-job.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-job.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-action.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-application.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-database.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-handler.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-info.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-monitor.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-path.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-thumb.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-types.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-user.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-util.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-volume.h
+  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs.h
+  /usr/include/thunarx-1/thunarx/thunarx-config.h
+  /usr/include/thunarx-1/thunarx/thunarx-file-info.h
+  /usr/include/thunarx-1/thunarx/thunarx-menu-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-preferences-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-property-page-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-property-page.h
+  /usr/include/thunarx-1/thunarx/thunarx-provider-factory.h
+  /usr/include/thunarx-1/thunarx/thunarx-provider-plugin.h
+  /usr/include/thunarx-1/thunarx/thunarx-renamer-provider.h
+  /usr/include/thunarx-1/thunarx/thunarx-renamer.h
+  /usr/include/thunarx-1/thunarx/thunarx.h
+  /usr/lib/libthunar-vfs-1.dll.a
+  /usr/lib/libthunar-vfs-1.la
+  /usr/lib/libthunarx-1.dll.a
+  /usr/lib/libthunarx-1.la
+  /usr/lib/pkgconfig/thunar-vfs-1.pc
+  /usr/lib/pkgconfig/thunarx-1.pc
   /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsGroup.html
   /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsJob.html
   /usr/share/gtk-doc/html/thunar-vfs/ThunarVfsMimeAction.html
@@ -355,122 +466,16 @@ Files included in the binary package:
   /usr/share/gtk-doc/html/thunarx/thunarx.devhelp
   /usr/share/gtk-doc/html/thunarx/thunarx.devhelp2
   /usr/share/gtk-doc/html/thunarx/up.png
-  /usr/share/icons/hicolor/16x16/apps/Thunar.png
-  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-shortcuts.png
-  /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-templates.png
-  /usr/share/icons/hicolor/24x24/apps/Thunar.png
-  /usr/share/icons/hicolor/48x48/apps/Thunar.png
-  /usr/share/icons/hicolor/scalable/apps/Thunar.svg
-  /usr/share/locale/ar/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/be/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ca/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/cs/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/da/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/de/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/dz/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/el/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/eo/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/es/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/et/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/eu/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/fi/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/fr/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/gl/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/he/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/hu/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/id/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/it/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ja/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ka/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ko/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ku/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/lt/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/lv/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/mk/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/nb_NO/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/nl/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/nn_NO/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/pa/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/pl/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/pt_PT/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ro/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ru/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/sk/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/sq/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/sv/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/tr/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/uk/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/ur/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/Thunar.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/Thunar.mo
-  /usr/share/man/man1/Thunar.1.gz
-  /usr/share/pixmaps/Thunar/Thunar-about-logo.png
-  /usr/share/pixmaps/Thunar/Thunar-fallback-icon.png
-  /usr/share/thumbnailers/thunar-vfs-font-thumbnailer-1.desktop
-  /usr/share/xfce4/panel-plugins/thunar-tpa.desktop
-
-(libthunar1)
-  /usr/bin/cygthunar-vfs-1-2.dll
-  /usr/bin/cygthunarx-1-2.dll
-  /usr/lib/thunarx-1/thunar-apr.dll
-  /usr/lib/thunarx-1/thunar-apr.la
-  /usr/lib/thunarx-1/thunar-sbr.dll
-  /usr/lib/thunarx-1/thunar-sbr.la
-  /usr/lib/thunarx-1/thunar-uca.dll
-  /usr/lib/thunarx-1/thunar-uca.la
-  /usr/lib/xfce4/ThunarBulkRename
-  /usr/lib/xfce4/ThunarHelp
-  /usr/lib/xfce4/thunar-sendto-email.exe
-  /usr/lib/xfce4/thunar-vfs-font-thumbnailer-1.exe
-  /usr/lib/xfce4/thunar-vfs-mime-cleaner-1.exe
-  /usr/lib/xfce4/thunar-vfs-pixbuf-thumbnailer-1.exe
-  /usr/lib/xfce4/thunar-vfs-update-thumbnailers-cache-1.exe
-
-(libthunar1-devel)
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-config.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-enum-types.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-info.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-interactive-job.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-job.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-action.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-application.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-database.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-handler.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-mime-info.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-monitor.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-path.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-thumb.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-types.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-user.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-util.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs-volume.h
-  /usr/include/thunar-vfs-1/thunar-vfs/thunar-vfs.h
-  /usr/include/thunarx-1/thunarx/thunarx-config.h
-  /usr/include/thunarx-1/thunarx/thunarx-file-info.h
-  /usr/include/thunarx-1/thunarx/thunarx-menu-provider.h
-  /usr/include/thunarx-1/thunarx/thunarx-preferences-provider.h
-  /usr/include/thunarx-1/thunarx/thunarx-property-page-provider.h
-  /usr/include/thunarx-1/thunarx/thunarx-property-page.h
-  /usr/include/thunarx-1/thunarx/thunarx-provider-factory.h
-  /usr/include/thunarx-1/thunarx/thunarx-provider-plugin.h
-  /usr/include/thunarx-1/thunarx/thunarx-renamer-provider.h
-  /usr/include/thunarx-1/thunarx/thunarx-renamer.h
-  /usr/include/thunarx-1/thunarx/thunarx.h
-  /usr/lib/libthunar-vfs-1.dll.a
-  /usr/lib/libthunar-vfs-1.la
-  /usr/lib/libthunarx-1.dll.a
-  /usr/lib/libthunarx-1.la
-  /usr/lib/pkgconfig/thunar-vfs-1.pc
-  /usr/lib/pkgconfig/thunarx-1.pc
 
 ------------------
 
 Port Notes:
 
------ version 0.9.91-1 -----
+----- version 0.9.92-1 -----
 Version bump for Xfce 4.6-beta2.
+
+----- version 0.9.91-1 -----
+Version bump for Xfce 4.6-beta1.
 
 ----- version 0.8.0-1 -----
 Initial release of Xfce 4.4 for Cygwin.

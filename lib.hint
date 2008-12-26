@@ -1,6 +1,0 @@
-category: X11
-requires: cygwin GConf2 atk gamin glib2 gtk2-x11 libX11_6 libexif12 libexo03 libfreetype26 libintl8 libjpeg62 libpcre0 libpng12 libxfce4util pango startup-notification
-external-source: thunar
-sdesc: "Xfce4 file manager libraries (runtime)"
-ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
-aiming to be easy-to-use and fast."

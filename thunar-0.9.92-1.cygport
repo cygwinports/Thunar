@@ -1,0 +1,18 @@
+XFCE_VERSION=4.5.${PV[3]}
+inherit xfce4
+
+DESCRIPTION="Xfce4 File Manager"
+
+PATCH_URI="0.9.92-no-undefined.patch
+           0.9.91-panel-plugindir.patch"
+
+PKG_NAMES="${PN} lib${PN}1_2 lib${PN}1-devel"
+thunar_CONTENTS="--exclude=gtk-doc
+                 etc/ usr/bin/Thunar.exe usr/bin/thunar-* usr/lib/xfce4/Thunar*
+                 usr/lib/xfce4/panel-plugins/thunar-tpa.exe
+                 usr/lib/xfce4/thunar-sendto-email.exe
+                 usr/share/"
+libthunar1_2_CONTENTS="usr/bin/*-1-2.dll usr/lib/thunarx-1/ usr/lib/xfce4/*-1.exe"
+libthunar1_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/xfce4"

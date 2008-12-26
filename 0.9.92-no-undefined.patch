@@ -59,6 +59,21 @@
  defaultsdir = $(sysconfdir)/xdg/Thunar
  defaults_in_files = uca.xml.in
  defaults_DATA = $(defaults_in_files:.xml.in=.xml)
+--- origsrc/Thunar-0.9.92/plugins/thunar-wallpaper/Makefile.am	2008-11-11 17:54:05.000000000 -0600
++++ src/Thunar-0.9.92/plugins/thunar-wallpaper/Makefile.am	2008-12-26 11:00:43.006125000 -0600
+@@ -29,3 +29,12 @@
+ 	$(PLATFORM_LDFLAGS)						\
+ 	$(THUNARX_LDFLAGS)						\
+ 	$(THUNAR_VFS_LDFLAGS)
++
++if HAVE_CYGWIN
++thunar_wallpaper_plugin_la_LDFLAGS += -no-undefined
++endif
++
++thunar_wallpaper_plugin_la_LIBADD =		\
++	$(top_builddir)/thunar-vfs/libthunar-vfs-1.la		\
++	$(top_builddir)/thunarx/libthunarx-1.la				\
++	$(GTK_LIBS)
 --- origsrc/Thunar-0.9.91/thunar-vfs/Makefile.am	2008-06-19 03:08:19.000000000 -0500
 +++ src/Thunar-0.9.91/thunar-vfs/Makefile.am	2008-11-02 11:54:18.077276300 -0600
 @@ -143,6 +143,10 @@
