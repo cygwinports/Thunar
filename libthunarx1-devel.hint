@@ -1,0 +1,6 @@
+category: X11
+requires: cygwin libglib2.0-devel libgtk2.0-devel libthunarx1_2
+external-source: thunar
+sdesc: "Xfce4 file manager extension library (development)"
+ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
+aiming to be easy-to-use and fast."
