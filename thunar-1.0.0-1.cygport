@@ -1,4 +1,4 @@
-XFCE_VERSION=4.5.${PV#0.9.}
+XFCE_VERSION=4.6.${PV[3]}
 inherit xfce4
 
 DESCRIPTION="Xfce4 File Manager"
@@ -18,5 +18,6 @@ libthunar_vfs1_devel_CONTENTS="usr/include/thunar-vfs-1/ usr/lib/libthunar-vfs-1
 libthunarx1_2_CONTENTS="usr/bin/cygthunarx-1-2.dll usr/lib/thunarx-1/"
 libthunarx1_devel_CONTENTS="usr/include/thunarx-1/ usr/lib/libthunarx-1.*
                             usr/lib/pkgconfig/thunarx-1.pc usr/share/gtk-doc/html/thunarx/"
+PKG_IGNORE="usr/bin/thunar"
 
 CYGCONF_ARGS="--libexecdir=/usr/lib/xfce4"

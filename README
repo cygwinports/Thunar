@@ -7,10 +7,10 @@ Runtime requirements:
   cygwin-1.5.25-15
   libatk1.0_0-1.24.0-1
   libcairo2-1.8.6-1
-  libdbus-glib_1_2-0.78-1
-  libdbus1_3-1.2.4-1
+  libdbus-glib_1_2-0.80-1
+  libdbus1_3-1.2.12-1
   libexif12-0.6.17-1
-  libexo0.3_0-0.3.99.1-1
+  libexo0.3_0-0.3.100-1
   libfreetype6-2.3.8-1
   libgamin1_0-0.1.10-2
   libgconf2_4-2.24.0-1
@@ -26,8 +26,8 @@ Runtime requirements:
   libSM6-1.1.0-1
   libstartup-notification1_0-0.9-2
   libX11_6-1.1.5-2
-  libxfce4util4-4.5.99.1-1
-  xfce4-panel-4.5.99.1-1
+  libxfce4util4-4.6.0-1
+  xfce4-panel-4.6.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -42,7 +42,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.99.1-1
+  xfce4-dev-tools-4.6.0-1
 
 Canonical website:
   http://www.xfce.org/
@@ -53,19 +53,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack thunar-0.9.99.1-X-src.tar.bz2
+  unpack thunar-1.0.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./thunar-0.9.99.1-X.cygport all
+  cygport ./thunar-1.0.0-X.cygport all
 
 This will create:
-  /usr/src/libthunar-vfs1-devel-0.9.99.1-X.tar.bz2
-  /usr/src/libthunar-vfs1_2-0.9.99.1-X.tar.bz2
-  /usr/src/libthunarx1-devel-0.9.99.1-X.tar.bz2
-  /usr/src/libthunarx1_2-0.9.99.1-X.tar.bz2
-  /usr/src/thunar-0.9.99.1-X-src.tar.bz2
-  /usr/src/thunar-0.9.99.1-X.tar.bz2
+  /usr/src/libthunar-vfs1-devel-1.0.0-X.tar.bz2
+  /usr/src/libthunar-vfs1_2-1.0.0-X.tar.bz2
+  /usr/src/libthunarx1-devel-1.0.0-X.tar.bz2
+  /usr/src/libthunarx1_2-1.0.0-X.tar.bz2
+  /usr/src/thunar-1.0.0-X-src.tar.bz2
+  /usr/src/thunar-1.0.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -282,17 +282,17 @@ Files included in the binary package:
   /usr/share/doc/Thunar/html/zh_TW/the-file-manager-window.html
   /usr/share/doc/Thunar/html/zh_TW/using-removable-media.html
   /usr/share/doc/Thunar/html/zh_TW/working-with-files-and-folders.html
-  /usr/share/doc/thunar-0.9.99.1/AUTHORS
-  /usr/share/doc/thunar-0.9.99.1/COPYING
-  /usr/share/doc/thunar-0.9.99.1/COPYING.LIB
-  /usr/share/doc/thunar-0.9.99.1/ChangeLog
-  /usr/share/doc/thunar-0.9.99.1/FAQ
-  /usr/share/doc/thunar-0.9.99.1/HACKING
-  /usr/share/doc/thunar-0.9.99.1/INSTALL
-  /usr/share/doc/thunar-0.9.99.1/NEWS
-  /usr/share/doc/thunar-0.9.99.1/README
-  /usr/share/doc/thunar-0.9.99.1/THANKS
-  /usr/share/doc/thunar-0.9.99.1/TODO
+  /usr/share/doc/thunar-1.0.0/AUTHORS
+  /usr/share/doc/thunar-1.0.0/COPYING
+  /usr/share/doc/thunar-1.0.0/COPYING.LIB
+  /usr/share/doc/thunar-1.0.0/ChangeLog
+  /usr/share/doc/thunar-1.0.0/FAQ
+  /usr/share/doc/thunar-1.0.0/HACKING
+  /usr/share/doc/thunar-1.0.0/INSTALL
+  /usr/share/doc/thunar-1.0.0/NEWS
+  /usr/share/doc/thunar-1.0.0/README
+  /usr/share/doc/thunar-1.0.0/THANKS
+  /usr/share/doc/thunar-1.0.0/TODO
   /usr/share/icons/hicolor/16x16/apps/Thunar.png
   /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-shortcuts.png
   /usr/share/icons/hicolor/16x16/stock/navigation/stock_thunar-templates.png
@@ -476,6 +476,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.0-1 -----
+Version bump for Xfce 4.6.0.
 
 ----- version 0.9.99.1-1 -----
 Version bump for Xfce 4.6-rc1.
