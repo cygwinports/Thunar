@@ -4,15 +4,16 @@ inherit xfce4
 DESCRIPTION="Xfce4 File Manager"
 
 PATCH_URI="0.9.92-no-undefined.patch
-           0.9.91-panel-plugindir.patch"
+           0.9.91-panel-plugindir.patch
+           1.0.1-deffilemode.patch"
 
 PKG_NAMES="${PN} libthunar-vfs1_2 libthunar-vfs1-devel libthunarx1_2 libthunarx1-devel"
-thunar_CONTENTS="--exclude=gtk-doc
+Thunar_CONTENTS="--exclude=gtk-doc
                  etc/ usr/bin/Thunar.exe usr/bin/thunar-* usr/lib/xfce4/Thunar*
                  usr/lib/xfce4/panel-plugins/thunar-tpa.exe
                  usr/lib/xfce4/thunar-sendto-email.exe
                  usr/share/"
-libthunar_vfs1_2_CONTENTS="usr/bin/cygthunar-vfs-1-2.dll usr/lib/xfce4/thunar-vfs-*-1.exe"
+libthunar_vfs1_2_CONTENTS="usr/bin/cygthunar-vfs-1-2.dll usr/lib/xfce4/thunar-vfs-*-1.exe*"
 libthunar_vfs1_devel_CONTENTS="usr/include/thunar-vfs-1/ usr/lib/libthunar-vfs-1.*
                                usr/lib/pkgconfig/thunar-vfs-1.pc usr/share/gtk-doc/html/thunar-vfs/"
 libthunarx1_2_CONTENTS="usr/bin/cygthunarx-1-2.dll usr/lib/thunarx-1/"
