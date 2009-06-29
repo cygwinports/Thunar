@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libthunar-vfs1_2 libexo0.3-devel libgamin1-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel gettext libjpeg-devel libpng12-devel libstartup-notification1-devel libX11-devel libxfce4util-devel
+requires: libthunar-vfs1_2 libexo0.3-devel libgamin1-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel gettext libjpeg-devel libpng12-devel libstartup-notification1-devel libX11-devel libxfce4util-devel
 external-source: Thunar
 sdesc: "Xfce4 VFS library (development)"
 ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
