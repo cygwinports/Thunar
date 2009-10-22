@@ -1,4 +1,4 @@
-category: X11
+category: Xfce
 requires: libatk1.0_0 libexif12 libexo0.3_0 libgcc1 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libpcre0 libthunar-vfs1_2 libX11_6 libxfce4util4
 external-source: Thunar
 sdesc: "Xfce4 file manager extension library (runtime)"
