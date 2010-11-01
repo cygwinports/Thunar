@@ -3,8 +3,7 @@ inherit xfce4
 DESCRIPTION="Xfce4 File Manager"
 
 PATCH_URI="0.9.92-no-undefined.patch
-           0.9.91-panel-plugindir.patch
-           1.0.1-deffilemode.patch"
+           0.9.91-panel-plugindir.patch"
 
 PKG_NAMES="${PN} ${PN}-devel libthunar-vfs1_2 libthunar-vfs1-devel"
 Thunar_CONTENTS="--exclude=gtk-doc --exclude=*thunar-vfs-1*
