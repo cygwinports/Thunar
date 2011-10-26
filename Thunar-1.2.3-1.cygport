@@ -5,7 +5,6 @@ DESCRIPTION="Xfce4 File Manager"
 PKG_NAMES="${PN} ${PN}-devel"
 Thunar_CONTENTS="--exclude=gtk-doc
                  etc/ usr/bin/ usr/lib/Thunar/ usr/lib/thunarx-2/ usr/lib/xfce4/ usr/share/"
-Thunar_devel_CONTENTS="usr/include/thunarx-2/ usr/lib/libthunarx-2.*
-                       usr/lib/pkgconfig/thunarx-2.pc usr/share/gtk-doc/html/thunarx/"
+Thunar_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/" # usr/share/gtk-doc/"
 
 export PLATFORM_LDFLAGS=-no-undefined
