@@ -1,0 +1,17 @@
+inherit xfce4
+
+NAME="Thunar"
+VERSION=1.6.3
+RELEASE=1
+CATEGORY="Xfce"
+SUMMARY="Xfce4 file manager"
+DESCRIPTION="Thunar is a modern file manager for the Xfce4 desktop,
+aiming to be easy-to-use and fast."
+
+PKG_NAMES="${NAME} ${NAME}-devel"
+Thunar_REQUIRES="tumbler"
+Thunar_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/Thunar/
+	usr/lib/thunarx-2/ usr/lib/xfce4/ usr/share/"
+Thunar_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/" # usr/share/gtk-doc/"
+
+export PLATFORM_LDFLAGS=-no-undefined

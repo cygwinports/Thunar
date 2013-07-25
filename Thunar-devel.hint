@@ -1,6 +1,0 @@
-category: Xfce
-requires: Thunar libglib2.0-devel libgtk2.0-devel
-external-source: Thunar
-sdesc: "Xfce4 file manager (extension development)"
-ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
-aiming to be easy-to-use and fast."
