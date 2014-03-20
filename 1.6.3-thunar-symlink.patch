@@ -1,0 +1,13 @@
+Avoid possible circular reference in compatibility symlink
+
+--- origsrc/Thunar-1.6.3/thunar/Makefile.am	2013-05-05 11:37:23.000000000 -0500
++++ src/Thunar-1.6.3/thunar/Makefile.am	2014-03-19 20:22:01.985480000 -0500
+@@ -286,7 +286,7 @@ desktop_DATA = $(desktop_in_files:.deskt
+ # install symlink to 'thunar'
+ install-exec-hook:
+ 	$(mkinstalldirs) $(DESTDIR)$(bindir)
+-	-( cd $(DESTDIR)$(bindir) ; test -x Thunar || ln -sf thunar Thunar )
++	-( cd $(DESTDIR)$(bindir) ; test -x Thunar || ln -sf thunar$(EXEEXT) Thunar )
+ 
+ clean-local:
+ 	rm -f *.core core core.*
