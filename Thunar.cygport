@@ -2,7 +2,7 @@ inherit xfce4
 
 NAME="Thunar"
 VERSION=1.6.10
-RELEASE=1
+RELEASE=2
 CATEGORY="Xfce"
 SUMMARY="Xfce4 file manager"
 DESCRIPTION="Thunar is a modern file manager for the Xfce4 desktop,
