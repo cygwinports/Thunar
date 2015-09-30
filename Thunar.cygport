@@ -8,7 +8,10 @@ SUMMARY="Xfce4 file manager"
 DESCRIPTION="Thunar is a modern file manager for the Xfce4 desktop,
 aiming to be easy-to-use and fast."
 
-PATCH_URI="1.6.3-thunar-symlink.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/Thunar.git/plain/Thunar-1.6.2-glib2-open-with-order.patch
+	1.6.3-thunar-symlink.patch
+"
 
 PKG_NAMES="${NAME} ${NAME}-devel"
 Thunar_REQUIRES="gvfs"
