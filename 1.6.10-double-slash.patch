@@ -1,0 +1,11 @@
+--- origsrc/Thunar-1.6.10/thunar/thunar-file.c	2015-05-22 08:25:36.000000000 -0500
++++ src/Thunar-1.6.10/thunar/thunar-file.c	2015-10-11 11:29:34.733313400 -0500
+@@ -3481,7 +3481,7 @@ thunar_file_get_thumbnail_path (ThunarFi
+            */
+ 
+           /* build and check if the thumbnail is in the new location */
+-          file->thumbnail_path = g_build_path ("/", g_get_user_cache_dir(),
++          file->thumbnail_path = g_build_path (g_get_user_cache_dir(),
+                                                "thumbnails", "normal",
+                                                filename, NULL);
+ 
